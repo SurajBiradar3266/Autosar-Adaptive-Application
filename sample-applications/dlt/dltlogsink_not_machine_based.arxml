@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00051.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>apd</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>Dlt</SHORT-NAME>
+          <ELEMENTS>
+            <DLT-LOG-SINK>
+              <SHORT-NAME>DataSenderFileDltSink</SHORT-NAME>
+              <CATEGORY>DLT_LOGSINK_FILE</CATEGORY>
+              <DEFAULT-LOG-THRESHOLD>VERBOSE</DEFAULT-LOG-THRESHOLD>
+              <PATH>/var/redirected/DataSender</PATH>
+            </DLT-LOG-SINK>
+            <DLT-LOG-SINK>
+              <SHORT-NAME>DataRecieverFileDltSink</SHORT-NAME>
+              <CATEGORY>DLT_LOGSINK_FILE</CATEGORY>
+              <DEFAULT-LOG-THRESHOLD>VERBOSE</DEFAULT-LOG-THRESHOLD>
+              <PATH>/var/redirected/DataReciever</PATH>
+            </DLT-LOG-SINK>
+            </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
